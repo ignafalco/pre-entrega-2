@@ -25,16 +25,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="d-flex justify-content-end nav-item">
-                <a id="color__white" class="nav-link" href="#">Trabajos</a>
+                <a id="color__white" class="nav-link" href="./views/trabajos.html">Trabajos</a>
               </li>
               <li class="d-flex justify-content-end nav-item">
-                <a id="color__white" class="nav-link" href="#">Sobre mi</a>
+                <a id="color__white" class="nav-link" href="./views/sobremi.html">Sobre mi</a>
               </li>
               <li class="d-flex justify-content-end nav-item">
-                <a id="color__white" class="d-flex justify-content-end nav-link" href="#">Blog</a>
+                <a id="color__white" class="d-flex justify-content-end nav-link" href="./views/blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a id="color__white" class="d-flex justify-content-end nav-link" href="#">Contacto</a>
+                <a id="color__white" class="d-flex justify-content-end nav-link" href="./views/contacto.html">Contacto</a>
               </li>
               </li>
             </ul>
@@ -45,23 +45,49 @@
       <!-- TERMINA NAV -->
       
       <!-- EMPIEZA MAIN -->
-      <main id="main__index" class="mt-5">
+      <main id="main__index" class="mt-2">
         <div class="px-5 d-flex flex-column justify-content-center container div__main">
-            <h1 id="h1__main" class="px-lg-5 fw-bold color__white">Soy Ignacio Falco, diseñador UX y licenciado en marketing.</h1>
+            <h1 id="h1__main" class="px-lg-5 fw-bold color__white">Soy <span class="flicker1">Ignacio</span> <span class="flicker2">Falco</span>, diseñador UX y licenciado en marketing.</h1>
             <h3 class="h3__main py-lg-3 px-lg-5 fw-bold color-orange">BIENVENIDO A MI PORTFOLIO ONLINE</h3>
-            <p class="px-lg-5 color__white">Soy apasionado de trabajar bajo un pensamiento de diseño y con una mirada del usuario como centro de cada estrategia, pudiendo resolver desafios del mundo real a escala. Viniendo de la rama del marketing, me gusta conectar los objetivos comerciales con la satisfacción y experiencia del usuario.</p>
-            <button type="button" class="mx-lg-5 my-lg-3 btn .btn-font btn-width btn-blue color-orange">Observa mi trabajo</button>
-         </div>
+            <p id="p__principal" class="px-lg-5 color__white">Soy apasionado de trabajar bajo un pensamiento de diseño y con una mirada del usuario como centro de cada estrategia, pudiendo resolver desafios del mundo real a escala. Viniendo de la rama del marketing, me gusta conectar los objetivos comerciales con la satisfacción y experiencia del usuario.</p>
+            <a href="./views/trabajos.html">
+              <button type="button" class="mx-lg-5 my-lg-3 btn .btn-font btn-width btn-blue color-orange">Observa mi trabajo</button>
+            </a>
+          </div>
       </main>
 
        <!-- TERMINA MAIN -->
        
+      <!-- EMPIEZA ARTICLE 1 -->
+      <article id="carrusel__index" class="mb-5">
+      <h2 class="color-orange">Trabajos destacados</h2>
+        <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="./img/1.svg"></figure>
+                <figure><img src="./img/Cover.svg"></figure>
+                <figure><img src="./img/Cover1.svg"></figure>
+                <figure><img src="./img/1.svg"></figure>
+                <figure><img src="./img/Cover.svg"></figure>
+                <figure><img src="./img/Cover1.svg"></figure>
+                <figure><img src="./img/1.svg"></figure>
+                <figure><img src="./img/Cover.svg"></figure>
+                <figure><img src="./img/Cover1.svg"></figure>
+                <figure><img src="./img/1.svg"></figure>
+            </div>
+        </div>
+      </article>
+
+      <!-- TERMINA ARTICLE 1 -->
+
+
+
+
        <!-- EMPIEZA SECCIÓN 1-->
     
   <section id="seccion1" class="mb-5 container">
     <h3 class="mb-5 titulo__seccion1 color__white">01. Trabajos destacados</h3>
     <div class="pt-5 row ">
-      <div class="texto__seccion1 col-lg-4">
+      <div class="texto__seccion1 col-lg-4 col-md-12">
         <h3 class="mb-3 subtitulo__seccion1 color__white">Rediseño Prime Video</h3>
         <div class="mb-5 d-flex flex-row">
           <div class="bg-pink div__tema--seccion1">
@@ -71,10 +97,13 @@
             <p class="px-2">UI</p>
           </div>
         </div>
-          <p class="color__white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eos facilis at dolorem quisquam, perferendis aperiam vitae sit eveniet illo a quae nemo ea incidunt tempora soluta, quasi nisi</p>
-      </div>
-      <div class="col-lg-8">
-        <img src="./img/Cover1.svg" alt="" class="w-100 d-flex justify-content-center">
+          <p class="mb-5 color__white">Trabajo de investigación y análisis para el rediseño de la aplicación movil de Prime Video</p>
+          <a target="_blank" class="a__casodeestudio color__blue" href="https://www.behance.net/gallery/144791141/Rediseno-UXUI-Prime-Video">Ver caso de estudio</a>
+        </div>
+      <div id="img__seccion" class="col-lg-8 col-md-12">
+        <a target="_blank" href="https://www.behance.net/gallery/144791141/Rediseno-UXUI-Prime-Video">
+          <img src="./img/Cover1.svg" alt="" class="w-100 d-flex justify-content-center">
+        </a>
       </div>
     </div>
   </section>
@@ -83,12 +112,14 @@
 
      <!-- EMPIEZA SECCIÓN 2-->
 
-     <section class="mt-5 mb-5 container">
+     <section id="seccion2" class="mt-5 mb-5 container">
       <div class="pt-5 row ">
-      <div id="img__seccion2" class="col-lg-6">
-        <img src="./img/Cover2.svg" alt="" class="w-100 d-flex justify-content-center">
-      </div>
-        <div class="texto__seccion2 col-lg-6">
+      <div id="img__seccion" class="col-lg-6 col-md-12">
+        <a target="_blank" href="https://www.behance.net/gallery/146973767/Diseno-UXUI-Empire">
+          <img src="./img/Cover2.svg" alt="" class="w-100 d-flex justify-content-center">
+        </a>
+        </div>
+        <div class="texto__seccion2 col-lg-6 col-md-12">
           <h3 class="mb-3 subtitulo__seccion1 color__white">Diseño Empire</h3>
           <div class="mb-5 d-flex flex-row">
             <div class="bg-pink div__tema--seccion1">
@@ -98,12 +129,60 @@
               <p class="px-2">UI</p>
             </div>
           </div>
-            <p class="color__white">Aplicación movil para explorar y ver ejercicios para realizar actividad física donde y cuando quieras.</p>
-        </div>
+            <p class="mb-5 color__white">Aplicación movil para explorar y ver ejercicios para realizar actividad física donde y cuando quieras.</p>
+            <a target="_blank" class="a__casodeestudio color__blue" href="https://www.behance.net/gallery/146973767/Diseno-UXUI-Empire">Ver caso de estudio</a>
+          </div>
       </div>
     </section>
 
-     <!-- TERMINA SECCION -->
+     <!-- TERMINA SECCION 2 -->
+
+      <!-- INICA SECCION 3 -->
+    <section id="seccion3">
+      <div class="container">
+        <a href="./views/trabajos.html">
+          <button type="button" class="bg-orange color__white my-lg-5 btn .btn-font btn-width btn-blue">Ver mas trabajos</button>
+        </a>
+      </div>
+    </section>
+
+      <!-- TERMINA SECCION 3 -->
+
+    <!-- INICIA ARTICULO 2 -->
+
+    <article class="mb-5 article__index container">
+      <h3 class="color-orange mb-5 titulo__article2 color__white">Sobre mi</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="./img/me.jpg" alt="foto personal" class="w-100">
+        </div>
+        <div class="ps-5 pt-5 col-lg-7">
+          <p class="article__parrafo color__white">Soy un diseñador UX y licenciado en marketing de Argentina, trabajando actualmente de manera freelance y como analista CX en "TomclieCX". Me gradué en la Universidad Empresarial Siglo XXI con el título de licenciado en comercialización</p>
+          <a href="./views/sobremi.html">
+            <button type="button" class="bg-orange color__white my-lg-5 btn .btn-font btn-width btn-blue">Conoceme</button>
+          </a>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- FIN ARTICULO 2 -->
+
+
+     <!-- INICIA FOOTER -->
+
+     <div class="text-center">
+      <div class="footer__border card-body">
+        <h5 class="pb-3 color__white card-title">Me encantaria conectar con vos</h5>
+        <a class="footer__a p-4 color__white" target="_blank" href="https://www.linkedin.com/in/ignacio-falco-12a3131a1/">LinkedIn</a>
+        <a class="footer__a p-4 color__white" target="_blank" href="https://twitter.com/ignafalco">Twitter</a>
+        <a class="footer__a p-4 color__white" target="_blank" href="https://www.instagram.com/ignafalco/?hl=es-la">Instagram</a>
+        <a class="footer__a p-4 color__white" target="_blank" href="https://www.behance.net/ignaciofalco">Behance</a>
+        <a class="footer__a p-4 color__white" target="_blank" href="https://github.com/ignafalco">Github</a>
+      </div>
+    </div>
+
+     <!-- TERMINA FOOTER -->
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
 
